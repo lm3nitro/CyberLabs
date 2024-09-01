@@ -141,7 +141,8 @@ sudo cp etc/rita.yaml /etc/rita/config.yaml && sudo chmod 666 /etc/rita/config.y
 
 ![Pasted image 20240417150321](https://github.com/lm3nitro/Projects/assets/55665256/4847afcf-0300-44b0-9b22-dee8584bad7c)
 
->#### Note: RITA itself only puts files in a few places: `/usr/local/bin/rita`, `/etc/rita/`, and `/var/lib/rita/`.  If you want remove Rita, you can just directly delete all those.
+> [!TIP]
+> RITA itself only puts files in a few places: `/usr/local/bin/rita`, `/etc/rita/`, and `/var/lib/rita/`.  If you want remove Rita, you can just directly delete all those.
 
 ## Upgrading Between Minor or Patch Versions :
 
@@ -192,11 +193,9 @@ make install
 ```
 ![Pasted image 20240417130133](https://github.com/lm3nitro/Projects/assets/55665256/f3191f99-a068-4609-9253-34aeb5ef85c8)
 
-Note:
-
-If the `configure` script fails, then it is most likely because it either couldn’t find a required dependency or it couldn’t find a sufficiently new version of a dependency. Assuming that you already installed all required dependencies, then you may need to use one of the `--with-*` options that can be given to the `configure` script to help it locate a dependency. To find out what all different options `./configure` supports, run `./configure --help`.
-
-The default installation path is `/usr/local/zeek`, which would typically require root privileges when doing the `make install`. A different installation path can be chosen by specifying the `configure` script `--prefix` option. Note that `/usr`, `/opt/bro/`, and `/opt/zeek` are the standard prefixes for binary Zeek packages to be installed, so those are typically not good choices unless you are creating such a package.
+> [!TIP]
+> If the `configure` script fails, then it is most likely because it either couldn’t find a required dependency or it couldn’t find a sufficiently new version of a dependency. Assuming that you already installed all required dependencies, then you may need to use one of the `--with-*` options that can be given to the `configure` script to help it locate a dependency. To find out what all different options `./configure` supports, run `./configure --help`.
+> The default installation path is `/usr/local/zeek`, which would typically require root privileges when doing the `make install`. A different installation path can be chosen by specifying the `configure` script `--prefix` option. Note that `/usr`, `/opt/bro/`, and `/opt/zeek` are the standard prefixes for binary Zeek packages to be installed, so those are typically not good choices unless you are creating such a package.
 
 5. Configuring the Run-Time Environment:
 
