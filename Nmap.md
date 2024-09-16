@@ -1,4 +1,4 @@
-# $${\color{red}Nmap}$$
+# Nmap
 
 ![Pasted image 20240424134353](https://github.com/lm3nitro/Projects/assets/55665256/b3eb7242-99a3-4e22-a98b-3171e1c3b191)
 
@@ -6,7 +6,7 @@ Nmap is short for Network Mapper. It is an open-source Linux command-line tool t
 
 ### Scope:
 
-I will be installing namp and will use it against a Linux host to verify which ports and services are open. I will also being using vulcssn and namp-vulnerls script.
+I will be installing namp and will use it against a Linux host to verify which ports and services are open. I will also being using vulscan and namp-vulnerls script.
 
 ### Tools and Technology:
 Nmap, Linux OS, and Wireshark
@@ -149,4 +149,6 @@ Here we are able to see that VNC was detected on our host.
 
 ## Summary:
 
-Inconclusion, namp is a great tool that can be enhanced with other options such as scripts. Administrators and adversaries alike can use nmap for both network discovery and security auditing. Administrators utilize nmap to identify open ports, detect services, and uncover vulnerabilities that can be exploited. On the other hand, the adversary can use nmap to do reconaissance and identify weak points or flaws so that they can exploit it. Using Wireshark also provided another level or visbility and allowed me to undersand how this type of scan can be identified via traffic analysis. 
+In conclusion, namp is a great tool that can be enhanced with other options such as scripts. Administrators and adversaries alike can use nmap for both network discovery and security auditing. Administrators utilize nmap to identify open ports, detect services, and uncover vulnerabilities that can be exploited. On the other hand, the adversary can use nmap to do reconaissance and identify weak points or flaws so that they can exploit it. Using Wireshark also provided another level or visbility and allowed me to undersand how this type of scan can be identified via traffic analysis.  
+
+Upon completing the scan, the output stated that the target host
