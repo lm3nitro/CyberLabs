@@ -1,13 +1,13 @@
-# $${\color{lightblue}Nessus}$$
+# Nessus
 
 <img width="310" alt="Screenshot 2024-05-18 at 12 20 46 AM" src="https://github.com/lm3nitro/Projects/assets/55665256/b03da507-1696-40ca-b410-d604e5783e8b">
 
-Nessus is a  security scanning tool, which scans a computer and raises an alert if it discovers any vulnerabilities that malicious hackers could use to gain access to any computer you have connected to a network.
+Nessus is a security scanning tool, which scans a computer and raises an alert if it discovers any vulnerabilities that malicious hackers could use to gain access to any computer you have connected to a network.
 
 Vulnerability Scanning is the process of detecting, assessing, and reporting on security defects and vulnerabilities. Automated vulnerability scanning technologies are used to access the attack surface, identify potential risk exposures and attack vectors throughout an organization’s networks, hardware, software, and systems. The scanning and assessment of vulnerabilities is a critical phase in the vulnerability management lifecycle.
 
 ### Scope:
-I will download and install Nessus and will run vulnerability assesment on a target hsot.
+I will download and install Nessus and will run a vulnerability assesment on a target host. 
 
 ### Tools and Technologies:
 Nessus, Wireshark, Nmap, Linux OS, Metaspolitable
@@ -37,7 +37,7 @@ sudo apt upgrade && upgrade
 
 ## Start or Stop Nessus:
 
-The following commands can be used to start or stop nessus:
+The following commands can be used to start or stop Nessus:
 
 ```
 systemctl start nessusd
@@ -116,13 +116,15 @@ netcat 192.168.44.136 1524
 
 ![Pasted image 20240419165419](https://github.com/lm3nitro/Projects/assets/55665256/195433bf-a3b0-4fab-9103-be0ff94e2393)
 
-I was able to connect as root. I checked Wireshark again as it was still running in the background and could see the traffic:
+I was able to connect as root. I checked Wireshark again as it was still running in the background and could see the following traffic:
 
 ![Pasted image 20240419165508](https://github.com/lm3nitro/Projects/assets/55665256/93ddee58-e221-4d99-b297-d12809f3b13d)
 
 ## Remediation: 
 
-Vulnerability remediation is the process of finding, addressing, and neutralizing security vulnerabilities which can include computers, digital assets, networks, web applications, and mobile devices. It's one of the most important steps in the vulnerability management cycle, which is critical for securing networks, preventing data loss, and enforcing business continuity.
+Vulnerability remediation is the process of finding, addressing, and neutralizing security vulnerabilities which can include computers, digital assets, networks, web applications, and mobile devices. It's one of the most important steps in the vulnerability management cycle, which is critical for securing networks, preventing data loss, and enforcing business continuity. 
+
+In this scenario, I found many vulnerabilities and there were multiple that fall unde the critical severity. My target host had not only weak passwords, but also older 
 
 ### Summary: 
 
