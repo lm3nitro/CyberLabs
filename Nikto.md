@@ -1,4 +1,4 @@
-# $${\color{lightblue}Nikto}$$
+# Nikto
 
 ![Pasted image 20240424131136](https://github.com/lm3nitro/Projects/assets/55665256/72ab1490-febc-4011-9812-436feeb7110a)
 
@@ -6,7 +6,7 @@ Nikto is an open-source web vulnerability scanner based on Perl. It scans web se
 
 ### Scope:
 
-I will be installing Nikto and using it to scan a web server, see what it is able to find and report, and will be analyzing the traffic on the web server itself via Wireshark.
+I will be installing Nikto and using it to scan a web server, see what it is able to find and report. I will be analyzing the traffic on the web server itself via Wireshark to see how this scnan will look and be detected in the on target host.
 
 ### Tools and Technology:
 Nikto, Linux OS, Apache2, and Wireshark
@@ -99,4 +99,4 @@ I was alsp able to Identify the application being used within Wireshark and its 
 
 ## Summary:
 
-I liked that Nikto was very simplistic and easy to use. Often times, web servers are first in the line of attack. Having a tool like Nikto that can provide insights into the security posture of the server is very beneficial. Nikto can be installed both in Win and Linux OS. Its important to note that Nikto is not the best tool for stealth procedures. As we saw in the Wireshark traffic analysis, it does many GET requests that can be seen and not to mention what can be found in ther server logs. I can see the many benefits it can offer think that this is great to have as part of your tool set. 
+I liked that Nikto was very simplistic and easy to use. Often times, web servers are first in the line of attack. Having a tool like Nikto that can provide insights into the security posture of the server is very beneficial. Nikto can be installed both in Win and Linux OS. Its important to note that Nikto is not the best tool for stealth procedures. As we saw in the Wireshark traffic analysis, it does many GET requests that can be seen and not to mention what can be found in the server logs. I can see the many benefits it can offer think that this is great to have as part of your tool set. 
