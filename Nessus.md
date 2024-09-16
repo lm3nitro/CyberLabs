@@ -124,7 +124,7 @@ I was able to connect as root. I checked Wireshark again as it was still running
 
 Vulnerability remediation is the process of finding, addressing, and neutralizing security vulnerabilities which can include computers, digital assets, networks, web applications, and mobile devices. It's one of the most important steps in the vulnerability management cycle, which is critical for securing networks, preventing data loss, and enforcing business continuity. 
 
-In this scenario, I found many vulnerabilities and there were multiple that fall unde the critical severity. My target host had not only weak passwords, but also older 
+In this scenario, I found many vulnerabilities and there were multiple that fall unde the critical severity. My target host had not only weak passwords, but also older protocol version such as SSL v2 that were running. 
 
 ### Summary: 
 
