@@ -698,4 +698,4 @@ Going through the complete installation and configuratuion provided critical han
 + Understanding Sandbox Evasion Techniques
   - Going through this project also allowed me to learn about anti-sandbox techniques and how to mitigate or bypass them
  
-Overall, this helped me to cultivate a defensive mindset and understand the attackers mindset. The challenges encountered during the installation and configuration also helped with my critical thing and problem-solving skills. THis was a great hands-on experience in malware analysis, virtualization, networking, and system security. I would recommend anyone who wants to dive into cybersecurity to have their own sandbox. 
+Overall, this helped me to cultivate a defensive mindset and understand the attackers mindset. The challenges encountered during the installation and configuration also helped with my critical thinking and problem-solving skills. This was a great hands-on experience in malware analysis, virtualization, networking, and system security. I would recommend anyone who wants to dive into cybersecurity to have their own sandbox. 
