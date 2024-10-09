@@ -12,15 +12,11 @@ These are some features that it offers:
 + Multiple protocols data collection (STP, OSPF, BGP etc)
 + VLAN, ARP and FDB table collection
 + Customizable Dashboards
-+ Device Backup integration (Oxidized, RANCID)
 + Multiple Authentication Methods (MySQL, LDAP, Active Directory, HTTP)
 + NetFlow, sFlow, IPFIX (NfSen)
 + Service monitoring (Nagios Plugins)
 + Syslog (Integrated, Graylog)
-+ Traffic Billing (Quota, 95th Percentile)
-+ Two Factor Authentication
-+ API
-+ Auto Updating
++ Two Factor Authentication and more
 
 
 ### Scope:
@@ -261,4 +257,4 @@ We can also see the performance:
 
 ## Summary:
 
-I was able to install and configure LibreNMS, configure Fortinet SNMP traffic and added the firewall to LibreNMS for monitoring. I also changed the configuration have polling done every 1 min. Having this configuration in my network allows me to track configuration changes, monitor performance, and identify any anoolies in resources or unusual trafic patterns. I enjoyed getting this setup and looking at its features and functionlity. Although only a few were covered, LibreNMS offers many more features and is adaptable to meet your needs. 
+I was able to install and configure LibreNMS, configure Fortinet SNMP traffic and added the firewall to LibreNMS for monitoring. I also changed the configuration have polling done every 1 min. Having this configuration in my network allows me to track configuration changes, monitor performance, and identify any anoolies in resources or unusual trafic patterns. I enjoyed getting this setup and looking at its features and functionlity. Although only a few were covered, LibreNMS offers many more features and is adaptable.
