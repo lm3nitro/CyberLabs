@@ -5,7 +5,7 @@
 Arkime (formerly known as Moloch) is an open-source large-scale network traffic analysis tool that is designed to capture, index, and analyze network packets. It enables security analysts to conduct real-time, high-speed searches and data visualizations, aiding in the detection, diagnosis, and response to cybersecurity threats and anomalies within network environments.
 
 ### Scope:
-I will be installing and configuring Arkime and will be analyizng coming and going traffic from my internal servers.  
+I will be installing and configuring Arkime and will be analyzing coming and going traffic from my internal servers.  
 
 ### Tools and Technology:
 Arkime, Elasticsearch, Wireshark and Linux OS
