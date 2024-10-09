@@ -153,4 +153,4 @@ This project allowed me to get hands on experience in installing Zabbix, its age
 + Integrity: Monitoring for unauthorized changes in configurations and data. 
 + Availability: Monitoring system performance in order to avoid any potential issues that can cause downtime.
 
-Ovrerall, having comprehensive monitoring is crucial for maintaing a secure and reliable infrastructure. 
+Overall, having comprehensive monitoring is crucial for maintaing a secure and reliable infrastructure. 
