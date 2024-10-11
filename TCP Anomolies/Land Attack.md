@@ -1,4 +1,4 @@
-# LAN-DoS Attack
+# Land Attack
 
 <img width="673" alt="Screenshot 2024-10-10 at 10 05 23 PM" src="https://github.com/user-attachments/assets/8a658ebf-d439-40cf-881d-47da5925140c">
 
