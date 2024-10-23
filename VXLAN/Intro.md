@@ -68,4 +68,8 @@ You can also see full system details:
 
 ### Summary
 
-In this lab I was able to configure both VLAN-Aware and VLAN-Based approaches. Each configuration will be included here and named appropiately. 
+In this lab I was able to configure both VLAN-Aware and VLAN-Based approaches. Each configuration will be included below: 
+
++ [VLAN-Aware](https://github.com/lm3nitro/CyberLabs/tree/main/VXLAN/VLAN-Aware)
++ [VLAN-Based](https://github.com/lm3nitro/CyberLabs/tree/main/VXLAN/VLAN-Based)
+
