@@ -2,7 +2,7 @@
 
 <img width="444" alt="Screenshot 2024-09-19 at 10 01 04 PM" src="https://github.com/user-attachments/assets/793a23a6-7722-42b7-9749-a61642ac095b">
 
-DPI on Fortinet firewalls is a security feature that analyzes the content of the network packets beyond just its headers. It allows the firewall to identify and block varios types of threats, including malware and intrusion attempts. 
+DPI on Fortinet firewalls is a security feature that analyzes the content of the network packets beyond just its headers. It allows the firewall to identify and block various types of threats, including malware and intrusion attempts. 
 
 DPI is a technology that allows for the inspection and analysis of the contents of network packets passing through a firewall or security gateway. It does more than just the traditional packet filtering by examining the actual data payload of packets, including application-layer protocols, to make informed security decisions.
 
@@ -12,7 +12,7 @@ I currently have a Fortinet 60F firewall in my home network. The exercise involv
 
 ### Tools and Technology:
 
-Fortinet Firewall, Win 10 and Wireshark
+Fortinet Firewall and Wireshark
 
 ## Getting Started
 
@@ -59,11 +59,11 @@ Here is the warning message received once the Eicar test file attempted to downl
 
 ## Analyzing:
 
-Within the Firewall, I was also able to look into the traffic and see the following from the IP address going to the site:
+Within the Firewall, I was also able to investigate the traffic and see the following from the IP address going to the site:
 
 ![Pasted image 20240408210948](https://github.com/lm3nitro/Projects/assets/55665256/29be7fee-5420-40b8-86b8-32bc6632975f)
 
-Here I am able to see the search engine and the key phrase used on the target host:
+Here I can see the search engine and the key phrase used on the target host:
 
 ![Pasted image 20240408211125](https://github.com/lm3nitro/Projects/assets/55665256/9200e777-5fe2-4306-9234-f97ad45df5f2)
 
@@ -82,3 +82,4 @@ During this test, I also had a capture running. Below is what I was able to see 
 ### Summary:
 
 Overall, Enabling Deep Packet Inspection (DPI) enhances security by allowing detailed analysis of packet contents and facilitates application layer filtering, enabling granular control over traffic and effective bandwidth management by prioritizing critical applications. This experience allowed me to gain a deeper understanding of traffic management on my host system, enabling me to effectively monitor and control the flow of data in real-time. Additionally, I learned how to configure and utilize tools like Deep Packet Inspection (DPI) and logging for enhanced threat detection and analysis. 
+
