@@ -141,15 +141,14 @@ sudo cp etc/rita.yaml /etc/rita/config.yaml && sudo chmod 666 /etc/rita/config.y
 
 ![Pasted image 20240417150321](https://github.com/lm3nitro/Projects/assets/55665256/4847afcf-0300-44b0-9b22-dee8584bad7c)
 
-> [!TIP]
-> RITA itself only puts files in a few places: `/usr/local/bin/rita`, `/etc/rita/`, and `/var/lib/rita/`.  If you want remove Rita, you can just directly delete all those.
+>#### Note: RITA itself only puts files in a few places: `/usr/local/bin/rita`, `/etc/rita/`, and `/var/lib/rita/`.  If you want remove Rita, you can just directly delete all those.
 
-## Upgrading Between Minor or Patch Versions :
+## Upgrading Between Minor or Patch Versions:
 
 If you are upgrading within the same major version (e.g. v2.0.0 to v2.0.1, or v3.0.0 to v3.1.0) all you need to do is download the newest RITA binary and replace the one on your system.
 
 Example: 
-Replace the binary located `/usr/local/bin/rita`  with the new binary.
+Replace the binary located `/usr/local/bin/rita` with the new binary.
 
 ![Pasted image 20240419110545](https://github.com/lm3nitro/Projects/assets/55665256/1aefe3e4-495b-4209-83a4-1f9af926ec46)
 
@@ -193,13 +192,15 @@ make install
 ```
 ![Pasted image 20240417130133](https://github.com/lm3nitro/Projects/assets/55665256/f3191f99-a068-4609-9253-34aeb5ef85c8)
 
-> [!TIP]
-> If the `configure` script fails, then it is most likely because it either couldn’t find a required dependency or it couldn’t find a sufficiently new version of a dependency. Assuming that you already installed all required dependencies, then you may need to use one of the `--with-*` options that can be given to the `configure` script to help it locate a dependency. To find out what all different options `./configure` supports, run `./configure --help`.
-> The default installation path is `/usr/local/zeek`, which would typically require root privileges when doing the `make install`. A different installation path can be chosen by specifying the `configure` script `--prefix` option. Note that `/usr`, `/opt/bro/`, and `/opt/zeek` are the standard prefixes for binary Zeek packages to be installed, so those are typically not good choices unless you are creating such a package.
+Note:
+
+If the `configure` script fails, then it is most likely because it either couldn’t find a required dependency or it couldn’t find a sufficiently new version of a dependency. Assuming that you already installed all required dependencies, then you may need to use one of the `--with-*` options that can be given to the `configure` script to help it locate a dependency. To find out what all different options `./configure` supports, run `./configure --help`.
+
+The default installation path is `/usr/local/zeek`, which would typically require root privileges when doing the `make install`. A different installation path can be chosen by specifying the `configure` script `--prefix` option. Note that `/usr`, `/opt/bro/`, and `/opt/zeek` are the standard prefixes for binary Zeek packages to be installed, so those are typically not good choices unless you are creating such a package.
 
 5. Configuring the Run-Time Environment:
 
-You may want to adjust your `PATH` environment variable according to the platform/shell/package you’re using since neither `/usr/local/zeek/bin/` nor `/opt/zeek/bin/` will reside in the default `PATH`. For example:
+You may want to adjust your `PATH` environment variable according to the platform/shell/package you’re using since neither `/usr/local/zeek/bin/` nor `/opt/zeek/bin/` will reside in the default `PATH`. For example:
 
 Bourne-Shell Syntax:
 ```
@@ -278,3 +279,5 @@ sudo suricata-update
 Now that I have RITA, ZEEK, and Suricata all running, I can start to do some threat hunting. Installing and configuring these tools expanded my knowledge in network security and threat detection, deepening my understanding of how various security technologies interoperate. This integration highlights the importance of interoperability among security systems, emphasizing how a layered security approach can enhance overall protection.
 
 In the next section titled "Threat Hunting with RITA" I provide an example of this.  
+
+
