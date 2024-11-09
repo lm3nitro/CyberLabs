@@ -1,6 +1,6 @@
 # Land Attack
 
-<img width="673" alt="Screenshot 2024-10-10 at 10 05 23 PM" src="https://github.com/user-attachments/assets/8a658ebf-d439-40cf-881d-47da5925140c">
+<img width="673" alt="Screenshot 2024-10-10 at 10 05 23 PM" src="https://github.com/user-attachments/assets/3fb7583c-1b23-4e4a-b288-09a456e0e5e9">
 
 In a LAND attack, the attacker sends specially crafted packets with the same source and destination IP addresses as well as the same source and destination port numbers. This can confuse the target device's TCP/IP stack, causing it to enter a loop where it keeps processing the malicious packets, consuming CPU resources and potentially leading to a denial of service.
 
@@ -12,14 +12,14 @@ In a LAND attack, the attacker sends specially crafted packets with the same sou
 
 ### Analysis
 
-Lets see an example below:
+Let's see an example below:
 ```
 tcpdump -nr threat_actor.pcap 'tcp[13] $ 2!=0' and net 192.168.10.0/24 -c 20
 ```
 
 ![Pasted image 20240327163548](https://github.com/lm3nitro/Projects/assets/55665256/7bbb6ac9-69b5-4084-b351-0b4c04b54a0d)
 
-Here we see traffic originating from the same ip address as the destination with incremental source ports. This makes it seem like the attack is coming from the target itself. When the target device receives these packets, it attempts to respond to itself. Since the device tries to establish a connection or respond to the packet it "received" from itself, it can create a feedback loop. This can lead to resource exhaustion as the device becomes overwhelmed trying to process these requests.
+Here we see traffic originating from the same IP address as the destination with incremental source ports. This makes it seem like the attack is coming from the target itself. When the target device receives these packets, it attempts to respond to itself. Since the device tries to establish a connection or respond to the packet it "received" from itself, it can create a feedback loop. This can lead to resource exhaustion as the device becomes overwhelmed trying to process these requests.
 
 ### Effects:
 
