@@ -4,7 +4,7 @@ SiLK (System for Internet-Level Knowledge) suite, is a collection of open-source
 
 ### Scope:
 
-I will be configuring a standalone sensor configuration, where the server will have both YAF and SILK installed and configured. The server interface will be connected to a tap that is listening to all the traffic incoming and outgoing from the network. I will then analyze netflow and using SiLK to run different queries. The primary objective is to develop a thorough understanding of network flow data and its implications for security and performance. 
+I will be configuring a standalone sensor configuration, where the server will have both YAF and SILK installed and configured. The server interface will be connected to a tap that is listening to all the traffic incoming and outgoing from the network. I will then analyze NetFlow and using SiLK to run different queries. The primary objective is to develop a thorough understanding of network flow data and its implications for security and performance. 
 
 ### Physical Topology:
 
@@ -20,7 +20,7 @@ Network Tap, SiLK, Cisco Router & Switch, and Ubuntu
 
 ![Pasted image 20240526142532](https://github.com/lm3nitro/Projects/assets/55665256/76397c66-1cee-4b64-81c8-40665dacb770)
 
-## Install Prerequisites:
+## Installing Prerequisites
 
 To get started I began by installing the needed prerequisites:
 
@@ -30,7 +30,7 @@ apt install libmaxminddb-dev
 apt install apt-get install build-essential
 apt install gcc
 ```
-## Download Software:
+## Downloading Software
 
 Next, I downloaded SiLK:
 
@@ -41,7 +41,7 @@ wget https://tools.netsa.cert.org/releases/silk-3.19.1.tar.gz
 
 ![Pasted image 20240526104427](https://github.com/lm3nitro/Projects/assets/55665256/6b5983ce-df2b-4eb1-b3d2-2213e6c237e4)
 
-I also downloaded libfixbuf and YAF:
+I also downloaded libfixbuf and YAF
 
 ```
 wget https://tools.netsa.cert.org/releases/libfixbuf-2.4.1.tar.gz
@@ -57,7 +57,7 @@ wget https://tools.netsa.cert.org/releases/yaf-2.12.2.tar.gz
 
 ![Pasted image 20240526104552](https://github.com/lm3nitro/Projects/assets/55665256/a4e0f212-7ccd-41ff-a57f-9687704a1f44)
 
-## Installing libfixbuf :
+## Installing libfixbuf
 
 libfixbuf is designed for handling the collection, processing, and analysis of network flow data. Once downlaoded, I proceed to install it:
 
@@ -70,7 +70,7 @@ make
 make install
 ```
 
-## Installin SiLK :
+## Installing SiLK
 
 I then installed SiLK:
 
@@ -88,7 +88,7 @@ make
 make install
 ```
 
-## Installin YAF:
+## Installing YAF
 
 Previously I downloaded YAF, now I needed to install it:
 
@@ -108,9 +108,9 @@ cp /tmp/yaf-2.12.2/etc/init.d/yaf /etc/init.d/yaf
 chmod a+x /etc/init.d/yaf
 ```
 
-## Update Dynamic Linker:
+## Update Dynamic Linker
 
-Once everything was downlaoded and installed, I updated the cache of the dynamic linker. If you do not, it may be necessary to set the LD_LIBRARY_PATH environment variable to /usr/local/lib when you use SiLK or YAF. Typically an entry for /usr/local/lib will already exist in the /etc/ld.so.conf.d/ directory. To confirm, I used the following command: 
+Once everything was ddownloaded and installed, I updated the cache of the dynamic linker. If you do not, it may be necessary to set the LD_LIBRARY_PATH environment variable to /usr/local/lib when you use SiLK or YAF. Typically an entry for /usr/local/lib will already exist in the /etc/ld.so.conf.d/ directory. To confirm, I used the following command: 
 
 ```
 grep local /etc/ld.so.conf.d/*
@@ -122,7 +122,7 @@ You should see something like this : /etc/ld.so.conf.d/libc.conf:/usr/local/lib
 
 To update the cache in this case, I ran the ldconfig program. 
 
-## Configure SiLK:
+## Configuring SiLK:
 
 I then moved on to configuring SiLK:
 
@@ -337,12 +337,12 @@ rwsiteinfo --sensor=S0 --fields=type,repo-file-count,repo-start-date,repo-end-da
 ![Pasted image 20240526114425](https://github.com/lm3nitro/Projects/assets/55665256/ce884fa8-0cea-411b-8821-0661751aca8f)
 
 > [!NOTE]  
-> When a SiLK installation is built to use the local timezone (to determine if this is the case, check the Timezone support value in the output from the --version switch on most SiLK applications), the value of the TZ environment variable determines the timezone in which timestamps are displayed and parsed. If the TZ environment variable is not set, the default timezone is used. Setting TZ to 0 or to the empty string causes timestamps to be displayed in and parsed as UTC. The value of the TZ environment variable is ignored when the SiLK installation uses UTC unless the user requests use of the local timezone via a tool's --timestamp-format switch. For system information on the TZ variable:
+> When a SiLK installation is built to use the local time zone (to determine if this is the case, check the Timezone support value in the output from the --version switch on most SiLK applications), the value of the TZ environment variable determines the time zone in which timestamps are displayed and parsed. If the TZ environment variable is not set, the default time zone is used. Setting TZ to 0 or to the empty string causes timestamps to be displayed in and parsed as UTC. The value of the TZ environment variable is ignored when the SiLK installation uses UTC unless the user requests use of the local time zone via a tool's --timestamp-format switch. For system information on the TZ variable:
 > ![Pasted image 20240526113743](https://github.com/lm3nitro/Projects/assets/55665256/7ec06d08-12e4-40a1-8e19-6143359332bd)
 
 ## Queries
 
-Once everything what set, I wanted to analyze netflow data. Below are some of the queries that I ran to get an overview of what was going on in the network. 
+Once everything what set, I wanted to analyze NetFlow data. Below are some of the queries that I ran to get an overview of what was going on in the network. 
 
 1. This statistic shows the percentage of the records generated by source IP:
 
@@ -388,4 +388,5 @@ rwfilter --type=all --bytes=50000000- --pass=stdout | rwcut --num-recs=20
 
 Using SiLK allows for a more comprehensive visibility. This visibility is crucial for understanding bandwidth usage, identifying top talkers, and monitoring application performance, which can help in capacity planning and optimizing network resources. By analyzing flow data, SiLK can help detect unusual activity that may indicate security threats, such as DDoS attacks or data exfiltration attempts. It provides insights into communication patterns that might go unnoticed by traditional security measures, thus enabling quicker response times to potential incidents.
 
-By installing, configuring, and using SiLK, I was able to gain practical experience with the entire flow analysis process—from configuring network devices to export NetFlow data to using SiLK tools for filtering, sorting, and quering. One of that key objectives that I got from doing this project was learning how to spot unusual patterns in network traffic that could indicate security issues. This includes understanding what constitutes normal behavior for a given network and recognizing deviations that may suggest a threat.
+By installing, configuring, and using SiLK, I was able to gain practical experience with the entire flow analysis process—from configuring network devices to export NetFlow data to using SiLK tools for filtering, sorting, and querying. One of that key objectives that I got from doing this project was learning how to spot unusual patterns in network traffic that could indicate security issues. This includes understanding what constitutes normal behavior for a given network and recognizing deviations that may suggest a threat.
+
