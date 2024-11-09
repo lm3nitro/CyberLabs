@@ -10,12 +10,12 @@ The scanning tool sends a TCP packet with the FIN flag set to various ports on t
 
 Response from the Target:
 
-+ If the target port is closed, it will respond with a RST (Reset) packet. This indicates that there is no service listening on that port.
++ If the target port is closed, it will respond with an RST (Reset) packet. This indicates that there is no service listening on that port.
 + If the port is open, many operating systems (especially UNIX-based systems) will not respond at all. This lack of response suggests that the port is open, as it does not consider the unsolicited FIN packet a legitimate request.
 
 ### Analysis:
 
-Lets look at an example of this type of scan in the pcap below:
+Let's look at an example of this type of scan in the pcap below:
 
 ```
 tcpdump -nr threat_actor.pcap tcp[tcpflags] == tcp-fin -c 20
