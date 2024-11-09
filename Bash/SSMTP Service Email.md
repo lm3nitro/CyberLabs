@@ -136,5 +136,3 @@ Here is a look inside what was sent in the email:
 In this exercise, I was able to create a script that successfully executes whenever the Apache service is down. By automatically notifying of service outages, you can quickly react to potential impacts, gather resources for troubleshooting, and start remediation efforts as soon as the alert is received, enhancing overall service reliability.
 
 This practice helps ensure that services remain accessible and reliable, an important factor in the CIA triad. 
-
-
