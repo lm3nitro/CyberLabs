@@ -1,4 +1,4 @@
-# Nessus
+# $${\color{lightblue}Nessus}$$
 
 <img width="310" alt="Screenshot 2024-05-18 at 12 20 46 AM" src="https://github.com/lm3nitro/Projects/assets/55665256/b03da507-1696-40ca-b410-d604e5783e8b">
 
@@ -7,10 +7,10 @@ Nessus is a security scanning tool, which scans a computer and raises an alert i
 Vulnerability Scanning is the process of detecting, assessing, and reporting on security defects and vulnerabilities. Automated vulnerability scanning technologies are used to access the attack surface, identify potential risk exposures and attack vectors throughout an organization’s networks, hardware, software, and systems. The scanning and assessment of vulnerabilities is a critical phase in the vulnerability management lifecycle.
 
 ### Scope:
-I will download and install Nessus and will run a vulnerability assesment on a target host. 
+I will download and install Nessus and will run vulnerability assessment on a target host.
 
 ### Tools and Technologies:
-Nessus, Wireshark, Nmap, Linux OS, Metaspolitable
+Nessus, Wireshark, Nmap, Linux OS, Metasploitable
 
 ## Installation
 You can download direct from the browser or from the CLI via curl:
@@ -86,7 +86,7 @@ The Common Vulnerability Scoring System (CVSS) is a method used to supply a qual
 
 ![Pasted image 20240419161218](https://github.com/lm3nitro/Projects/assets/55665256/12d69150-da0d-4984-b2da-da1c7b37bcac)
 
-Based on the results, the scanner was able to find a  Bind shell on the host: 
+Based on the results, the scanner was able to find a Bind shell on the host: 
 
 >#### Simply a Bash shell that is _bind_ to port `1524/tcp` will run everything sent to that port on Bash and reply with the output. You don't need tools like Metasploit for that; a simple Netcat or Telnet will do.
 
@@ -116,25 +116,23 @@ netcat 192.168.44.136 1524
 
 ![Pasted image 20240419165419](https://github.com/lm3nitro/Projects/assets/55665256/195433bf-a3b0-4fab-9103-be0ff94e2393)
 
-I was able to connect as root. I checked Wireshark again as it was still running in the background and could see the following traffic:
+I was able to connect as root. I checked Wireshark again as it was still running in the background and could see the traffic:
 
 ![Pasted image 20240419165508](https://github.com/lm3nitro/Projects/assets/55665256/93ddee58-e221-4d99-b297-d12809f3b13d)
 
 ## Remediation: 
 
-Vulnerability remediation is the process of finding, addressing, and neutralizing security vulnerabilities which can include computers, digital assets, networks, web applications, and mobile devices. It's one of the most important steps in the vulnerability management cycle, which is critical for securing networks, preventing data loss, and enforcing business continuity. 
-
-In this scenario, I found many vulnerabilities and there were multiple that fall unde the critical severity. My target host had not only weak passwords, but also older protocol version such as SSL v2 that were running. 
+Vulnerability remediation is the process of finding, addressing, and neutralizing security vulnerabilities which can include computers, digital assets, networks, web applications, and mobile devices. It's one of the most important steps in the vulnerability management cycle, which is critical for securing networks, preventing data loss, and enforcing business continuity.
 
 ### Summary: 
 
-Nessus is a great tool for running series of vulnerability scans and test agains devices. I liked the granularity that it provided when it came to the details of the vulnerabilities it was able to find. In this scan, we were able to see the backdoor that was present on the host, we also tested to see if we could exploit it and were successful. We also analyzed the traffic in wireshark to see what the exploit looks like when excuted against the vulnerability. 
+Nessus is a great tool for running series of vulnerability scans and test against devices. I liked the granularity that it provided when it came to the details of the vulnerabilities it was able to find. In this scan, we were able to see the backdoor that was present on the host, we also tested to see if we could exploit it and were successful. We also analyzed the traffic in Wireshark to see what the exploit looks like when executed against the vulnerability. 
 
-Overall, there are a few things that can be done to help in minimizing vulnerabilties, these include the following:
+Overall, there are a few things that can be done to help in minimizing vulnerabilities, these include the following:
 + Regular Software Upgrades
 + Strong Access Controls
 + Network Segmentation
-+ Regular Vulernability Scanning and Penetration Testing
++ Regular Vulnerability Scanning and Penetration Testing
 + Employee Training
 
 These are just a few, there are many more. 
