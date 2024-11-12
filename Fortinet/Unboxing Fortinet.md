@@ -10,7 +10,7 @@ I successfully integrated Fortinet into my home network, enhancing its security 
 <img width="581" alt="Screenshot 2024-04-06 at 9 04 27 PM" src="https://github.com/lm3nitro/Projects/assets/55665256/a5217ca0-04ac-4d80-9f15-c480dba680c9">
 
 ## Configuration 
-Now to set it up. First, I powered it on, went to the login page, in this case the default was 192.168.1.99. The default username is admin and there is no password. Once I was in. it was time to get the firewall registered. To get it registered, we will go to the forticloud login page and select login/register:
+Now to set it up. First, I powered it on, went to the login page, in this case the default was 192.168.1.99. The default username is admin and there is no password. Once I was in. it was time to get the firewall registered. To get it registered, I went to the forticloud login page and selected login/register:
 
 <img width="1094" alt="Screenshot 2024-04-06 at 9 09 25 PM" src="https://github.com/lm3nitro/Projects/assets/55665256/a66a2e60-bf2b-4746-95d4-84c959ef1679">
 
@@ -36,13 +36,13 @@ After trial and error of trying to get it registered, I found out that by trying
 
 <img width="681" alt="Screenshot 2024-04-06 at 9 44 39 PM" src="https://github.com/lm3nitro/Projects/assets/55665256/03331b2f-c876-4018-b2a5-c1b611062d28">
 
-I then proceeded to install the latest update. As we can see, at the time, the latest available was v7.2.8. 
+I then proceeded to install the latest update. At the time of this writing, the latest available was v7.2.8. 
 
 <img width="1188" alt="Screenshot 2024-04-05 at 11 32 39 PM" src="https://github.com/lm3nitro/Projects/assets/55665256/8404b738-17ed-42e8-8a7c-61f4abe98b2d">
 
 <img width="674" alt="Screenshot 2024-04-05 at 11 33 24 PM" src="https://github.com/lm3nitro/Projects/assets/55665256/8c643013-db7e-4292-bdd7-1b48eaccd9e0">
 
-I went ahead and downloaded a copy of the configuration file in case anything happened during the upgrade and proceeded to upate. This was done faster than I thought and only took about 10 minutes to complete.
+I went ahead and downloaded a copy of the configuration file in case anything happened during the upgrade and proceeded to update. This was done faster than I thought and only took about 10 minutes to complete.
 
 <img width="1434" alt="Screenshot 2024-04-05 at 11 40 06 PM" src="https://github.com/lm3nitro/Projects/assets/55665256/4c7e3077-fc10-4941-9972-bbe9aeba9aaf">
 
@@ -52,4 +52,5 @@ Now that the firewall is registered, activated, and up to date, I proceeded to g
 
 ### Summary:
 
-Installing and getting it was fairly easy, I like how user friendly the interface is. Having a firewall in your home network is crucial to protect against intrusion, network control, and for privacy and malware defense. Having a firewall is a fundamental layer of security that enhances the safety of your home network.  
+Installing and getting it was fairly easy; I like how user friendly the interface is. Having a firewall in your home network is crucial to protect against intrusion, network control, and for privacy and malware defense. Having a firewall is a fundamental layer of security that enhances the safety of your home network.  
+
