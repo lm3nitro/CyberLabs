@@ -13,7 +13,7 @@ Linux OS, OpenVAS, Apache2 and Wireshark
 
 ## Installation
 
-To get started we will first need to install Postgresql. We can install it via the following command:
+To get started I first need edto install Postgresql:
 
 ```
 sudo apt install postgresql
@@ -21,7 +21,7 @@ sudo apt install postgresql
 
 ![Pasted image 20240423133224](https://github.com/lm3nitro/Projects/assets/55665256/d159b274-a4b4-4e67-b0c3-2dd35efc012f)
 
-Next, we will need to install the repository:
+Next, I needed to install the repository:
 
 ```
 sudo add-apt-repository ppa:mrazavi/gvm
@@ -51,14 +51,14 @@ sudo apt install gvm
 
 ![Pasted image 20240423133511](https://github.com/lm3nitro/Projects/assets/55665256/fd09e2e8-309f-4a7b-b690-a324f2476640)
 
-Once that has been installed, we will need to create the notus directory. This can be done using the following commands:
+Once that was installed, I created the notus directory:
 
 ```
 sudo mkdir /var/lib/notus
 sudo chown gvm:gvm /var/lib/notus
 ```
 
-Last but not least, we need to synchronize the greenbone nvt/cert/scap data. This will ensure everything is up to date. You can do that with the following commands:
+Last but not least, I needed to synchronize the greenbone nvt/cert/scap data. This will ensure everything is up to date:
 
 1. Synchronize nvt
 
@@ -84,7 +84,7 @@ sudo -u gvm -g gvm greenbone-feed-sync-legacy --type GVMD_DATA
 
 ![Pasted image 20240423134554](https://github.com/lm3nitro/Projects/assets/55665256/fe4bd50a-16eb-4303-922b-960e1d726c08)
 
->#### Optional: You can always removeNVT db if needed and rebuild it.
+>#### Optional: If needed, removeNVT db can be removed and rebuilt.
 
 ```
 export $(sudo cat /etc/default/gvmd-pg)
@@ -108,7 +108,7 @@ Username: admin
 Password: admin
 ```
 
-Upon logging in, we are presented with the dashboard:
+Upon logging in, I was presented with the dashboard:
 
 ![Pasted image 20240423134139](https://github.com/lm3nitro/Projects/assets/55665256/d3cef6a0-4936-4fc9-8729-26dbf19321a4)
 
@@ -118,7 +118,7 @@ Go to Administration --> Feed Status and check the status of the feeds:
 
 ![Pasted image 20240423201952](https://github.com/lm3nitro/Projects/assets/55665256/f01df476-99c7-4552-8617-d963333851f0)
 
-You can check the status of greenbone daemons with systemctl. Below is a series of status checks:
+Systemctl can be used to check the status of the greenbone daemons. Below is a series of status checks:
 
 Scanner:
 
