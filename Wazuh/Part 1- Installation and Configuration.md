@@ -51,7 +51,7 @@ I then verified the IP of the Wazuh server:
 
 ![Pasted image 20240428133459](https://github.com/lm3nitro/Projects/assets/55665256/4f0e3afa-2d74-4fac-b530-d3eab7f5514d)
 
-Now that we know the IP; we can navigate to it and login:
+Now that I know the IP; I can navigate to it and login:
 
 ![Pasted image 20240428133706](https://github.com/lm3nitro/Projects/assets/55665256/2dda9435-acb1-430d-8165-04b5a26d2628)
 
@@ -69,7 +69,7 @@ Once that was completed, I went to the host where I will install the agent and o
 
 ![Pasted image 20240428134509](https://github.com/lm3nitro/Projects/assets/55665256/3a0608f2-7f9a-4c45-84bb-16f89635e78d)
 
-I pasted the Wazuh generated command in Powershell:
+I pasted the Wazuh generated command in PowerShell:
 
 ![Pasted image 20240428134550](https://github.com/lm3nitro/Projects/assets/55665256/11383642-9b2e-45d4-a447-4e82e5383fd1)
 
@@ -103,17 +103,17 @@ Now that I installed the agent, I went back to Wazuh manager server to verify:
 
 ![Pasted image 20240428135201](https://github.com/lm3nitro/Projects/assets/55665256/f7638f52-9ac0-433c-abb0-aef4ce5efe2a)
 
-We can also see security event being generated from our Win 10 agent:
+I can also see security events being generated from our Win 10 agent:
 
 ![Pasted image 20240428141534](https://github.com/lm3nitro/Projects/assets/55665256/11fee0ee-8a86-4977-8d9c-df4e5cbb4a93)
 
 ## Linux Agent:
 
-For my Linux agent, I will be installing it on a host running Ubuntu. To do this we navigate to the window to add agent and select the same parameters as we did with the Win 10, only this time for Linux:
+For my Linux agent, I will be installing it on a host running Ubuntu. To do this I navigated to the window to add agent and select the same parameters as I did with the Win 10, only this time for Linux:
 
 ![Pasted image 20240428155628](https://github.com/lm3nitro/Projects/assets/55665256/60b6275f-d87d-498a-8012-e2554533db75)
 
-Once we complete the that, we can download the agent:
+Once that was compelted, I downloaded the agent:
 
 ```
 wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.7.3-1_amd64.deb && sudo WAZUH_MANAGER='10.10.100.47' WAZUH_AGENT_NAME='sql_lm3nitro_database' dpkg -i ./wazuh-agent_4.7.3-1_amd64.deb
@@ -121,7 +121,7 @@ wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.7.
 
 ![Pasted image 20240428155752](https://github.com/lm3nitro/Projects/assets/55665256/34449676-8166-4739-bf2b-4e894eb4a51c)
 
-Next, we can enable the agent:
+Next, I enabled the agent:
 
 ```
 sudo systemctl start wazuh-agent
@@ -137,7 +137,7 @@ Verified connectivity:
 
 ![Pasted image 20240428160441](https://github.com/lm3nitro/Projects/assets/55665256/2e4c7fac-cb35-4875-b678-e9e1444339d5)
 
-We can go back to the Wazuh management server and see the newly installed agent: 
+I went back to the Wazuh management server and could see the newly installed agent: 
 
 ![Pasted image 20240428160544](https://github.com/lm3nitro/Projects/assets/55665256/b6106dc5-49fa-40ff-9d53-b41a4147a2e5)
 
@@ -151,11 +151,11 @@ A look at the raw logs:
 
 ## Activating Vulnerability Module
 
-The Vulnerability Module is a component of the Wazuh security platform designed to identify and manage vulnerabilities within a network. By leveraging the Wazuh vulnerability module, we can gain deeper insights into the security state of our agents and enhance our threat detection and response. 
+The Vulnerability Module is a component of the Wazuh security platform designed to identify and manage vulnerabilities within a network. By leveraging the Wazuh vulnerability module, I was able to gain deeper insights into the security state of our agents and enhance our threat detection and response. 
 
 The files that are needed to modify Wazuh are oin /var/ossec/
 
-Lets navigate there:
+Let's navigate there:
 
 ```
 cd /var/ossec/
@@ -181,8 +181,7 @@ I then saved the file and changes made and restarted the Wazuh manager:
 
 Restarting Agents:
 
-> [!NOTE]  
-> It needs admin privileges to restart the services both on Linux and windows.
+>#### Note: It needs admin privileges to restart the services both on Linux and windows.
 
 Ubuntu 22.04
 
