@@ -189,7 +189,7 @@ sudo systemctl enable zeek
 
 To extend Zeek's functionality, you can take advantage of Zeek's Package Manager. AF_PACKET package is often used to to further optimize packet capture and analysis. Additional useful packages including ja3 and HASSH as well.
 
-To take advantage of Zeek's Packet Manager, will will need to download it. To do this, ensure that that it is being done in the home directory where we installed Zeek. For me it is in the /opt/:
+To take advantage of Zeek's Packet Manager, I will need to download it. To do this, I ensured that that it is being done in the home directory where I installed Zeek. For me it is in the /opt/:
 
 Used the following to configure Zeek Package Manager:
 ```
@@ -199,7 +199,7 @@ This will create a configuration file in /opt/zeek/etc/zkg/config. You can navig
 
 4. Configure Zeek to use AF_PACKET
 
-I then went back to edit my original workers I had set up previously in  /opt/zeek/etc/node.cfg to configure Zeek to use AF_PACKET.  In the example configuration below we are configuring one worker, load balanced across two cores, analyzing one sniffing interface.
+I then went back to edit my original workers I had set up previously in /opt/zeek/etc/node.cfg to configure Zeek to use AF_PACKET.  In the example configuration below I am configuring one worker, load balanced across two cores, analyzing one sniffing interface.
 
 ```
 # Example ZeekControl node configuration.
@@ -393,7 +393,7 @@ _TCP_ROUTING = *
 index = zeek
 sourcetype = corelight_files
 ```
-I also needed to create the outputs.conf to send data to my Splunk server. In the sample file below, I replaced each instance of splunkserver:9997 with your own server name/IP and port number.
+I also needed to create the outputs.conf to send data to my Splunk server. In the sample file below, I replaced each instance of splunkserver:9997 with my own server name/IP and port number.
 ```
 [tcpout]
 defaultGroup = default-autolb-group
@@ -417,3 +417,8 @@ Verification:
 ### Summary: 
 
 Installing Zeek and having it running in my network has big benefits. Having this installed provides deep visibility into my network traffic, helping to detect anomalies, potential intrusions, and suspicious behaviors. While working with Zeek, I have gained experience in network security monitoring which has enabled me to practice threat detection, learn how to investigate network events, and build upon my understanding of cybersecurity best practice and concepts. I was able to learn and analyze real-time network communication monitoring along with analysis of patterns and behaviors. Having Zeek has also allowed me to gain hands-on experience in reconstructing past events by examining its logs for root cause analysis. I highly recommend having Zeek installed in your home network. 
+
+
+
+
+
