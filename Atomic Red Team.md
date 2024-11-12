@@ -120,11 +120,10 @@ This host does have a Wazuh agent installed. I wanted to see the details that th
 
 <img width="1427" alt="Screenshot 2024-04-28 at 9 38 41 PM" src="https://github.com/lm3nitro/Projects/assets/55665256/b31f6cea-d459-4788-a468-3b2d52802f05">
 
-When we expand and see the details, we can see that this event was generated from our test:
+When I expand and see the details, I can see that this event was generated from the test:
 
 <img width="1396" alt="Screenshot 2024-04-28 at 9 39 14 PM" src="https://github.com/lm3nitro/Projects/assets/55665256/c20b8d6e-c688-4581-95db-b723dcbc43a2">
 
 ## Summary and Analysis: 
 
 I continued to run a series of other test and analyzed the logs provided by Wazuh. Although it is always best practice to have a series of security measures and not just one, I could see that Wazuh was able to capture all the security events I tested against the host. For being an open source tool, I beleive that Wazuh provided great insight and details about the test and the triggers. Overall, Atomic Red Team provides a way to simulate a series of different attacks in a controlled environment. The Atomic Red Team helps assess the effectiveness of current security measures, identify gaps, and improve incident and detection response capabilities. Using the Atomic Red Team also allowed me to facilitate hands-on learning and understanding of attack methods. 
-
