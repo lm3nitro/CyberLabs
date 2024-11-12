@@ -41,7 +41,7 @@ sudo systemctl status squid
 
 ## Configuring Squid
 
-The squid service can be configured by editing the `/etc/squid/squid.conf` file. The configuration file contains comments that describe what each configuration option does. You can also put your configuration settings in separate files, which can be included in the main configuration file using the “include” directive.
+The squid service can be configured by editing the `/etc/squid/squid.conf` file. The configuration file contains comments that describe what each configuration option does. You can also put the configuration settings in separate files, which can be included in the main configuration file using the “include” directive.
 
 Before making any changes, I created a backup of the original configuration file:
 
@@ -214,3 +214,6 @@ By installing Squid Proxy in my lab, I was able to learn how to configure and fi
 Testing domain blocking is important because it allowed me to simulate real-world scenarios where controlling access to certain online content is crucial. This is particularly valuable for improving network security, compliance, and productivity in environments like businesses, schools, or public networks. Domain blocking helps protect users from harmful websites, reduce distractions in work or study environments, and enforce organizational policies. I also liked the amount of information that the Squid logs offered when visualizing them using Splunk. By utilizing both Squid Proxy and Splunk, it allows users to quickly identify patterns, security incidents, or user behavior, which can be critical for troubleshooting and forensics.
 
 In conclusion, Squid Proxy is a powerful tool for optimizing network performance, enhancing security, and managing internet access. Furthermore, its support for traffic monitoring and SSL inspection provides deep visibility into network activity, helping detect potential security threats and ensuring efficient use of resources.
+
+
+
