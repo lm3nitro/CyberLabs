@@ -39,13 +39,13 @@ This is a view at the network traffic in Wireshark to visualize the behavior:
 
 ![Pasted image 20241006141550](https://github.com/user-attachments/assets/71b5968e-2f09-45ab-888c-470fe3897e25)
 
-Here the malformed packets are seen. We can also see the details of the decoded traffic and the combined string of all the packets together:
+Here the malformed packets are seen. I can also see the details of the decoded traffic and the combined string of all the packets together:
 
 ![Pasted image 20241006142142](https://github.com/user-attachments/assets/7395ac52-f7c6-419d-bacd-c62811cf39d9)
 
 ## Packet Analysis (payload reconstruction)
 
-We can also decode using python. In order to do this, I first located the location of the pcap that was generated:
+Python also allows you to decode. In order to do this, I first located the location of the pcap that was generated:
 
 ![Pasted image 20241006144408](https://github.com/user-attachments/assets/1894d96d-09ae-4b5e-98aa-2c46ae401fa0)
 
@@ -70,4 +70,5 @@ The script decoded the pcap file successfully.
 ### Summary:
 
 In doing this, I was able to learn how to create and send custom packets using Python along with the Scapy library and gained skills in manipulating packet fields and handling loops for sending multiple packets. Capturing packets in Wireshark allowed me to perform real-time analysis and I was able to reconstruct the payload. By reconstructing the payload from individual packets, I was able to better understand data segmentation and reassembly concepts. Ultimately, this exercise enhanced both my networking knowledge and practical programming skills in Python.
+
 
