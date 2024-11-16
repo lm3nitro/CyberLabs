@@ -1,5 +1,7 @@
 # Nfdump
 
+<img width="427" alt="Screenshot 2024-11-16 at 11 29 22 AM" src="https://github.com/user-attachments/assets/ba3261ba-27dc-4b5f-b473-c36e45881da6">
+
 Nfdump is a network flow data collector and analyzer that captures and stores information about network traffic flows in a format that's efficient for analysis. It's useful because it provides insights into network usage and can be used to troubleshoot network issues and detect potential security threats.
 
 ### Scope:
