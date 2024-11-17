@@ -1,5 +1,7 @@
 # VXLAN-EVPN
 
+<img width="507" alt="Screenshot 2024-11-16 at 8 29 09 PM" src="https://github.com/user-attachments/assets/8725fc28-76e8-4fc0-bef0-8145e92c8159">
+
 For this exercise of configuring VXLAN, I will be using EVE-NG. EVE-NG is a network emulation tool that allows users to design, configure, and test network topologies in a virtual environment. I have installed EVE-NG bare metal on my server in my home. VXLAN-EVPN  is a technology used in modern data center networking to address challenges related to scalability, multi-tenancy, and mobility. VXLAN works with BGP primarily through the use of BGP EVPN  to manage the control plane for VXLAN overlay networks. Below is a topology of what i will be configuring:
 
 ![Pasted image 20240426115032](https://github.com/lm3nitro/VXLAN-EVPN/assets/55665256/df580b3b-3c7c-48c6-9435-d56c5748b687)
