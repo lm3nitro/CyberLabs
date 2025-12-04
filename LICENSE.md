@@ -1,0 +1,5 @@
+# Copyright Notice
+
+Copyright (c) 2025 Erick Gomez. All Rights Reserved.
+
+Unauthorized copying, modification, or distribution of this code is prohibited.
